@@ -1,0 +1,57 @@
+:root {
+    --primary-yellow: hsl(43, 100%, 50%);
+    --primary-yellow-light: hsla(43, 100%, 50%, 0.95);
+    --dark-gray: hsl(0, 0%, 17%);
+    --very-dark-gray: hsl(0, 0%, 10%);
+    --medium-dark-gray: hsl(0, 1%, 23%);
+    --dark-blue-gray: hsl(220, 3%, 15%);
+    --medium-gray: hsl(0, 0%, 46%);
+    --light-gray: hsl(240, 20%, 95%);
+    --very-light-gray: hsl(220, 13%, 91%);
+    --white: hsl(0, 0%, 100%);
+    --body-background: hsl(0, 0%, 90%);
+    --left-nav-bg: hsl(0, 0%, 100%);
+    --right-nav-bg: hsl(0, 0%, 98%);
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    min-height: 100dvh;
+}
+
+body {
+    background-color: var(--body-background);
+    color: var(--medium-gray);
+}
+
+#root {
+    min-height: 100vh;
+    min-height: 100dvh;
+}
+
+@media screen and (max-width: 1000px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "mobile-nav"
+            "main";
+    }
+
+    .left-sidenav,
+    .right-sidenav {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: block;
+        grid-area: mobile-nav;
+    }
+
+    .content {
+        margin-top: 3.125rem;
+    }
+}

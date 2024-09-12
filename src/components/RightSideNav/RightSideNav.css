@@ -1,0 +1,4 @@
+.right-sidenav {
+    grid-area: right-nav;
+    background-color: var(--right-nav-bg);
+}

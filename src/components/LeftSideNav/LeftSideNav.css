@@ -1,0 +1,4 @@
+.left-sidenav {
+    grid-area: left-nav;
+    background-color: var(--left-nav-bg);
+}

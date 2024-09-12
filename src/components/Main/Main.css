@@ -1,0 +1,5 @@
+.content {
+    grid-area: main;
+    padding: 1.25rem;
+    overflow-y: auto;
+}
