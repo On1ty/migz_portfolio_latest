@@ -1,7 +1,4 @@
 .container {
     min-height: 100vh;
     min-height: 100dvh;
-    display: grid;
-    grid-template-columns: 19.063rem 1fr 6.75rem;
-    grid-template-areas: "left-nav main right-nav";
 }
