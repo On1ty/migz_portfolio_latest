@@ -1,0 +1,21 @@
+.mobile-menu {
+    /* display: none; */
+    position: fixed;
+    top: 50px;
+    left: 0;
+    right: 0;
+    background-color: var(--left-nav-bg);
+    padding: 20px;
+    z-index: 999;
+}
+
+.mobile-menu {
+    transition: opacity 0.2s ease, visibility 0.2s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.mobile-menu.active {
+    opacity: 1;
+    visibility: visible;
+}

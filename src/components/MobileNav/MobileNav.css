@@ -8,3 +8,10 @@
     right: 0;
     z-index: 1000;
 }
+
+.burger-menu {
+    font-size: 1.5rem;
+    color: var(--primary-yellow);
+    cursor: pointer;
+    text-decoration: none;
+}
