@@ -1,0 +1,56 @@
+{
+    "firstName": "Juan Miguel",
+    "middleName": "",
+    "lastName": "Pallo",
+    "birthday": "January 03, 1999",
+    "currentJob": "Software Developer",
+    "statement": "Aspiring software developer with five years of experience, skilled in various programming languages and problem-solving, seeks to contribute to innovative projects.",
+    "techStack": [
+        {
+            "name": "HTML 5",
+            "yearsExp": "5"
+        },
+        {
+            "name": "CSS 3",
+            "yearsExp": "5"
+        },
+        {
+            "name": "Angular",
+            "yearsExp": "2"
+        },
+        {
+            "name": "JavaScript",
+            "yearsExp": "5"
+        },
+        {
+            "name": "Git",
+            "yearsExp": "5"
+        },
+        {
+            "name": "C# (ASP.net MVC and WebForms)",
+            "yearsExp": "5"
+        },
+        {
+            "name": "Ionic",
+            "yearsExp": "3"
+        },
+        {
+            "name": "Database (MySQL, SQLite)",
+            "yearsExp": "5"
+        }
+    ],
+    "collegeEducation": [
+        {
+            "course": "Bachelor of Science in Computer Science",
+            "university": "University of Caloocan City",
+            "thesis": "Home Companion Robot (HOCOBOT)",
+            "thesisDescription": "Hocobot is a personal home companion robot that will greatly help us in things we do. From checking weather condition, looking for an answer on internet, finding things on web and even surveillance of the house. He is equipped with different sensor to detect the conditions of the surrounding and Artifical Intelligence that help him in decision making. We use microprocessor instead of micro-controller for better machine learning capabilities."
+        }
+    ],
+    "workHistory": [
+        {}
+    ],
+    "projects": [
+        {}
+    ]
+}
