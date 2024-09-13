@@ -59,6 +59,15 @@ body::-webkit-scrollbar-thumb {
 
 h1 {
     font-size: clamp(2.375rem, 2.25rem + 0.625vw, 3rem);
+}
+
+h2 {
+    font-size: clamp(1.375rem, 1.25rem + 0.625vw, 2rem);
+}
+
+h1,
+h2,
+h3 {
     color: var(--dark-gray);
 }
 
@@ -74,11 +83,11 @@ html {
 
 section {
     max-width: min(100% - 2rem, 200ch);
-    margin: 0 auto;
+    margin-inline: auto;
 }
 
-.text-primary-clr {
-    color: var(--primary-clr);
+section+section {
+    margin-block: 8.75rem;
 }
 
 button {
@@ -117,6 +126,21 @@ button.small {
     display: grid;
     grid-template-columns: minmax(15%, 19.063rem) 1fr minmax(5%, 6.75rem);
     grid-template-areas: "left-nav main right-nav";
+}
+
+.text-primary-clr {
+    color: var(--primary-clr);
+}
+
+section>.sub-header {
+    text-align: center;
+    font-weight: 700;
+}
+
+section>.statement {
+    text-align: center;
+    max-width: min(100%, 50ch);
+    margin: 1.563rem auto 3.125rem;
 }
 
 @media screen and (max-width: 1500px) {
@@ -177,5 +201,13 @@ button.small {
 @media screen and (max-width: 600px) {
     .hero-left {
         gap: 2rem;
+    }
+
+    .tech-stack {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .tech-item {
+        padding: .9rem;
     }
 }
