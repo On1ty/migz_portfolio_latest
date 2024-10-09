@@ -3,15 +3,22 @@
     background-color: var(--left-nav-bg);
 }
 
-.left-sidenav>div+div {
+.wrapper {
+    max-width: calc(100% - 3.5rem);
+    margin-inline: auto;
+    position: sticky;
+    top: 1rem;
+}
+
+.wrapper>div {
     border-bottom: 1px solid var(--light-gray);
+    padding-block: 1rem;
 }
 
 .profile {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-block: 1rem;
 }
 
 .profile__avatar {
@@ -34,6 +41,40 @@
     font-size: .938rem;
 }
 
-.profile > * + * {
+.profile>*+* {
     margin-top: .6rem;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    row-gap: 1rem;
+    /* font-size: 0.938rem; */
+    align-items: flex-start;
+}
+
+.info span {
+    color: var(--dark-gray);
+}
+
+.info>*:nth-child(odd)>span {
+    /* position: relative; */
+    background-color: var(--primary-clr);
+    padding: .2rem .3rem;
+}
+
+.info>*:nth-child(odd)>span::after {
+    content: ":";
+}
+
+.info>span:nth-child(even) {
+    text-align: right;
+}
+
+.info>.freelance {
+    color: var(--success-clr);
+}
+
+.info>.freelance--error {
+    color: var(--error-clr);
 }
