@@ -4,11 +4,11 @@ import placeholderHeroPhoto from "../../assets/placeholder-company-photoshoot.jp
 import HireMeBtn from "../HireMeBtn/HireMeBtn";
 import "./HeroSection.css";
 
-export default function HeroSection({ data }) {
+export default function HeroSection({ anchorId, data }) {
   const { firstName, lastName, currentJob, statement } = data;
 
   return (
-    <section className="hero">
+    <section className="hero" id={anchorId}>
       <div className="hero-left">
         <h1 className="hero-header">
           I'm {firstName} {lastName} <br />

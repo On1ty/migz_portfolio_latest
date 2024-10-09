@@ -9,8 +9,8 @@ export default function Main() {
 
   return (
     <main className="content">
-      <HeroSection data={data} />
-      <TechSection data={data.techStack} />
+      <HeroSection anchorId="hero" data={data} />
+      <TechSection anchorId="techStack" data={data.techStack} />
     </main>
   );
 }
