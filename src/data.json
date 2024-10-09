@@ -27,6 +27,32 @@
             "url": "https://www.linkedin.com/in/juan-miguel-pallo-0175561a1/"
         }
     ],
+    "extraSkills": [
+        {
+            "name": "Bootstrap",
+            "reactIcon": "faBootstrap"
+        },
+        {
+            "name": "Sass",
+            "reactIcon": "faSass"
+        },
+        {
+            "name": "Adobe Photoshop",
+            "reactIcon": "faImages"
+        },
+        {
+            "name": "Github",
+            "reactIcon": "faGithub"
+        },
+        {
+            "name": "Figma",
+            "reactIcon": "faFigma"
+        },
+        {
+            "name": "Unit Testing (NUnit)",
+            "reactIcon": "faVialCircleCheck"
+        }
+    ],
     "techStack": {
         "statement": "Skilled in web development and software engineering, I specialize in creating dynamic applications and robust backend solutions across multiple platforms.",
         "tech": [

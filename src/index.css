@@ -9,7 +9,7 @@
     --btn-hover-clr: var(--light);
     --medium-dark-gray: hsl(0, 1%, 23%);
     --dark-blue-gray: hsl(220, 3%, 15%);
-    --medium-gray: hsl(0, 0%, 46%);
+    --medium-gray: #767676;
     --light-gray: #f0f0f6;
     --very-light-gray: #e5e7eb;
     --body-background: hsl(0, 0%, 90%);
@@ -50,11 +50,11 @@ body {
     line-height: 1.5;
 }
 
-body::-webkit-scrollbar {
+::-webkit-scrollbar {
     width: 0.3rem;
 }
 
-body::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
     background-color: var(--primary-clr);
     border-radius: 1em;
 }
@@ -96,7 +96,8 @@ section+section {
     margin-block: 8.75rem;
 }
 
-button {
+button,
+.button {
     background-color: var(--primary-clr);
     color: var(--btn-clr);
     cursor: pointer;
@@ -108,21 +109,26 @@ button {
     transition: color .3s ease;
     font-size: 1rem;
     border-radius: .2em;
+    text-decoration: none;
 }
 
-button:hover {
+button:hover,
+.button:hover {
     color: var(--btn-hover-clr);
 }
 
-button.large {
+button.large,
+.button.large {
     font-size: 1.4rem;
 }
 
-button.normal {
+button.normal,
+.button.normal {
     font-size: 1rem;
 }
 
-button.small {
+button.small,
+.button.small {
     font-size: .9rem;
 }
 
@@ -132,6 +138,7 @@ button.small {
     display: grid;
     grid-template-columns: minmax(15%, 19.063rem) 1fr minmax(5%, 6.75rem);
     grid-template-areas: "left-nav main right-nav";
+    align-items: start;
 }
 
 .text-primary-clr {
@@ -149,14 +156,14 @@ section>.statement {
     margin: 1.563rem auto 3.125rem;
 }
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 93em) {
     /* .hero-photo {
         width: 20rem;
         height: 30rem;
     } */
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 81em) {
     #root {
         grid-template-columns: 1fr;
         grid-template-areas:
@@ -181,7 +188,7 @@ section>.statement {
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 50em) {
     .hero {
         grid-template-columns: 1fr;
         padding: 3rem .8rem .8rem;
@@ -204,7 +211,7 @@ section>.statement {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 37em) {
     .hero-left {
         gap: 2rem;
     }

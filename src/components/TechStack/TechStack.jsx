@@ -17,7 +17,6 @@ export default function TechStack({ tech }) {
     faJsSquare: faJsSquare,
     faGitAlt: faGitAlt,
     faDatabase: faDatabase,
-    faCode: faCode,
   };
 
   return (

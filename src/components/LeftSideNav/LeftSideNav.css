@@ -1,18 +1,33 @@
 .left-sidenav {
     grid-area: left-nav;
     background-color: var(--left-nav-bg);
+    position: sticky;
+    top: 0;
+    overflow-y: auto;
 }
 
 .wrapper {
     max-width: calc(100% - 3.5rem);
     margin-inline: auto;
-    position: sticky;
-    top: 1rem;
+    height: 100vh;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper>div:not(:last-child) {
+    border-bottom: 1px solid var(--light-gray);
 }
 
 .wrapper>div {
-    border-bottom: 1px solid var(--light-gray);
     padding-block: 1rem;
+}
+
+.wrapper > div:last-child {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .profile {
@@ -77,4 +92,27 @@
 
 .info>.freelance--error {
     color: var(--error-clr);
+}
+
+.extra-skills p {
+    font-weight: 500;
+    font-size: 1.125rem;
+    color: var(--dark-gray);
+}
+
+.extra-skills ul {
+    list-style: none;
+    margin-top: 0.938rem;
+}
+
+.extra-skills ul li {
+    display: grid;
+    grid-template-columns: 2rem 1fr;
+    gap: .5rem;
+    align-items: center;
+    margin-block: .2rem;
+}
+
+.extra-skills ul>li>svg {
+    color: var(--primary-clr);
 }
