@@ -1,0 +1,12 @@
+button.hire-me {
+    border: .1em solid var(--dark-gray);
+    outline: none;
+    position: relative;
+    box-shadow: -3px 3px 0 0 var(--dark-gray);
+}
+
+button.hire-me:active {
+    box-shadow: -1px 1px 0 0 var(--dark-gray);
+    top: 3px;
+    left: -3px;
+}
