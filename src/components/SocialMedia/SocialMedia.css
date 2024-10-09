@@ -1,0 +1,18 @@
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+}
+
+.media {
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    color: var(--dark-gray);
+    background-color: var(--primary-clr);
+    /* padding: .8rem; */
+    border-radius: 50%;
+    font-size: 1.5rem;
+    height: 1.5rem;
+    aspect-ratio: 1;
+}

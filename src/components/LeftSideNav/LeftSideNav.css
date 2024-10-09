@@ -2,3 +2,38 @@
     grid-area: left-nav;
     background-color: var(--left-nav-bg);
 }
+
+.left-sidenav>div+div {
+    border-bottom: 1px solid var(--light-gray);
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.profile__avatar {
+    max-width: 100%;
+    display: block;
+    width: 10rem;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid var(--dark-gray);
+    aspect-ratio: 1;
+}
+
+.profile__name {
+    font-weight: 500;
+    color: var(--dark-gray);
+    font-size: 1.125rem;
+}
+
+.profile_job {
+    font-size: .938rem;
+}
+
+.profile > * + * {
+    margin-top: 1rem;
+}

@@ -1,5 +1,5 @@
 import "./RightSideNav.css";
 
 export default function RightSideNav() {
-  return <aside className="right-sidenav"></aside>;
+  return <nav className="right-sidenav"></nav>;
 }

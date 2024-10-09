@@ -2,9 +2,27 @@
     "firstName": "Juan Miguel",
     "middleName": "",
     "lastName": "Pallo",
+    "nickname": "Migz",
     "birthday": "January 03, 1999",
     "currentJob": "Software Developer",
     "statement": "Experienced software developer with five years of expertise in diverse programming languages and strong problem-solving skills, eager to contribute to innovative and challenging projects.",
+    "socialMedia": [
+        {
+            "name": "Facebook",
+            "reactIcon": "faFacebookF",
+            "url": "https://www.facebook.com/JuwaaaanMig/"
+        },
+        {
+            "name": "Instagram",
+            "reactIcon": "faInstagram",
+            "url": "https://www.instagram.com/callmemigss/"
+        },
+        {
+            "name": "LinkedIn",
+            "reactIcon": "faLinkedinIn",
+            "url": "https://www.linkedin.com/in/juan-miguel-pallo-0175561a1/"
+        }
+    ],
     "techStack": {
         "statement": "Skilled in web development and software engineering, I specialize in creating dynamic applications and robust backend solutions across multiple platforms.",
         "tech": [
