@@ -2,9 +2,9 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import heroPhoto from "../../assets/company-photoshoot.jpeg";
 import placeholderHeroPhoto from "../../assets/placeholder-company-photoshoot.jpg";
 import HireMeBtn from "../HireMeBtn/HireMeBtn";
-import "./Hero.css";
+import "./HeroSection.css";
 
-export default function Hero({ data }) {
+export default function HeroSection({ data }) {
   const { firstName, lastName, currentJob, statement } = data;
 
   return (

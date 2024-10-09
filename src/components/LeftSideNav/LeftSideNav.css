@@ -11,7 +11,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 1rem;
+    margin-block: 1rem;
 }
 
 .profile__avatar {
@@ -35,5 +35,5 @@
 }
 
 .profile > * + * {
-    margin-top: 1rem;
+    margin-top: .6rem;
 }

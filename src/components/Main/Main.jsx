@@ -1,4 +1,4 @@
-import Hero from "../Hero/Hero";
+import HeroSection from "../HeroSection/HeroSection";
 import "./Main.css";
 import data from "../../data.json";
 import TechSection from "../TechSection/TechSection";
@@ -9,7 +9,7 @@ export default function Main() {
 
   return (
     <main className="content">
-      <Hero data={data} />
+      <HeroSection data={data} />
       <TechSection data={data.techStack} />
     </main>
   );
