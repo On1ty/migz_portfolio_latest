@@ -15,6 +15,8 @@
     --body-background: hsl(0, 0%, 90%);
     --left-nav-bg: var(--light);
     --right-nav-bg: #fafafa;
+    --success-clr: #198754;
+    --error-clr: #dc3545;
 }
 
 *,
