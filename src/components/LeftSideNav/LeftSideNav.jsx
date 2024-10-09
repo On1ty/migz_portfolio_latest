@@ -13,7 +13,7 @@ import {
 import { faVialCircleCheck } from "@fortawesome/free-solid-svg-icons/faVialCircleCheck";
 import { faImages } from "@fortawesome/free-solid-svg-icons";
 import { faClone } from "@fortawesome/free-regular-svg-icons";
-import DownloadCVBtn from "../DownloadCVBtn/DownloadCVBtn";
+import RequestCVBtn from "../RequestCVBtn/RequestCVBtn";
 
 export default function LeftSideNav() {
   const {
@@ -85,7 +85,7 @@ export default function LeftSideNav() {
           </ul>
         </div>
         <div>
-          <DownloadCVBtn />
+          <RequestCVBtn />
         </div>
       </div>
     </aside>

@@ -1,4 +1,12 @@
 .right-sidenav {
     grid-area: right-nav;
     background-color: var(--right-nav-bg);
+    position: sticky;
+    top: 0;
+    overflow-y: auto;
+}
+
+.wrapper {
+    height: 100vh;
+    height: 100dvh;
 }
