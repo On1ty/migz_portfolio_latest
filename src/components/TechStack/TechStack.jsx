@@ -5,6 +5,7 @@ import {
   faAngular,
   faJsSquare,
   faGitAlt,
+  faReact,
 } from "@fortawesome/free-brands-svg-icons";
 import { faCode, faDatabase } from "@fortawesome/free-solid-svg-icons";
 import "./TechStack.css";
@@ -17,6 +18,7 @@ export default function TechStack({ tech }) {
     faJsSquare: faJsSquare,
     faGitAlt: faGitAlt,
     faDatabase: faDatabase,
+    faReact: faReact,
   };
 
   return (

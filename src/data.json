@@ -51,6 +51,10 @@
         {
             "name": "Unit Testing (NUnit)",
             "reactIcon": "faVialCircleCheck"
+        },
+        {
+            "name": "TypeScript",
+            "reactIcon": ""
         }
     ],
     "techStack": {
@@ -78,28 +82,33 @@
             },
             {
                 "name": "Git",
-                "yearsExp": "5",
+                "yearsExp": "4",
                 "reactIcon": "faGitAlt"
             },
             {
                 "name": "C# (ASP.net MVC and WebForms)",
-                "yearsExp": "5",
-                "reactIcon": ""
-            },
-            {
-                "name": "Ionic",
                 "yearsExp": "3",
                 "reactIcon": ""
             },
             {
+                "name": "Ionic",
+                "yearsExp": "2",
+                "reactIcon": ""
+            },
+            {
                 "name": "Database (MySQL, SQLite)",
-                "yearsExp": "5",
+                "yearsExp": "3",
                 "reactIcon": "faDatabase"
             },
             {
                 "name": "jQuery",
                 "yearsExp": "5",
                 "reactIcon": ""
+            },
+            {
+                "name": "React",
+                "yearsExp": "1",
+                "reactIcon": "faReact"
             }
         ]
     },
