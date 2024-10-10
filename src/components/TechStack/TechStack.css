@@ -1,3 +1,9 @@
+.tech-stack {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+
 .tech-item {
     background-color: #fff;
     display: flex;
@@ -7,6 +13,7 @@
     gap: 1rem;
     text-align: center;
     border-radius: .3em;
+    justify-content: space-between;
 }
 
 .tech-icon {
