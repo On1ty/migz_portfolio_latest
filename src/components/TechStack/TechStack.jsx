@@ -25,7 +25,10 @@ export default function TechStack({ tech }) {
     <div className="tech-stack">
       {tech.map((tech) => (
         <div className="tech-item" key={tech.name}>
-          <FontAwesomeIcon className="tech-icon" icon={icons[tech.reactIcon] ?? faCode} />
+          <FontAwesomeIcon
+            className="tech-icon"
+            icon={icons[tech.reactIcon] ?? faCode}
+          />
           <p className="tech-name">{tech.name}</p>
           <p className="tech-exp">
             {tech.yearsExp} {tech.yearsExp > 1 ? `years` : `year`}
