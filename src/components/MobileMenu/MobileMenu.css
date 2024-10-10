@@ -5,7 +5,7 @@
     left: 0;
     right: 0;
     background-color: var(--left-nav-bg);
-    padding: 20px;
+    padding: 1.25rem;
     z-index: 999;
 }
 
