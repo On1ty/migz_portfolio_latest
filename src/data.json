@@ -58,7 +58,7 @@
         }
     ],
     "techStack": {
-        "statement": "Skilled in web development and software engineering, I specialize in creating dynamic applications and robust backend solutions across multiple platforms.",
+        "summary": "Skilled in web development and software engineering, I specialize in creating dynamic applications and robust backend solutions across multiple platforms.",
         "tech": [
             {
                 "name": "HTML 5",
@@ -112,19 +112,18 @@
             }
         ]
     },
-    "collegeEducation": [
-        {
-            "statement": "",
-            "education": [
-                {
-                    "course": "Bachelor of Science in Computer Science",
-                    "university": "University of Caloocan City",
-                    "thesis": "Home Companion Robot (HOCOBOT)",
-                    "thesisDescription": "Hocobot is a personal home companion robot that will greatly help us in things we do. From checking weather condition, looking for an answer on internet, finding things on web and even surveillance of the house. He is equipped with different sensor to detect the conditions of the surrounding and Artifical Intelligence that help him in decision making. We use microprocessor instead of micro-controller for better machine learning capabilities."
-                }
-            ]
-        }
-    ],
+    "educationHistory": {
+        "summary": "Holder of a Bachelor’s degree in Computer Science with a strong foundation in frontend development, backend solutions, and experience in robotics.",
+        "education": [
+            {
+                "degree": "Bachelor of Science in Computer Science",
+                "institution": "University of Caloocan City",
+                "batchYear": "2018-2019",
+                "capstone": "Home Companion Robot (HOCOBOT)",
+                "capstoneDescription": "Hocobot is a personal home companion robot that will greatly help us in things we do. From checking weather condition, looking for an answer on internet, finding things on web and even surveillance of the house. He is equipped with different sensor to detect the conditions of the surrounding and Artifical Intelligence that help him in decision making. We use microprocessor instead of micro-controller for better machine learning capabilities."
+            }
+        ]
+    },
     "workHistory": [
         {}
     ],

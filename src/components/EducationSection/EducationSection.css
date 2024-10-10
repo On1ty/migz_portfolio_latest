@@ -1,0 +1,36 @@
+.education {
+    background-color: var(--light);
+    padding-inline: 3rem;
+    border-radius: .3em;
+}
+
+.education-item {
+    display: grid;
+    grid-template-columns: .5fr 1fr;
+    padding-block: 3rem;
+}
+
+.education-item:not(:last-child) {
+    border-bottom: .150rem solid var(--light-gray);
+}
+
+.education-item>div>*:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.institution,
+.capstone {
+    font-weight: 500;
+    color: var(--dark-gray);
+}
+
+.batchYear {
+    background-color: var(--primary-clr);
+    color: var(--light);
+    padding: .1rem .4rem;
+}
+
+.capstone-desc {
+    font-size: 0.938rem;
+    text-align: justify;
+}
