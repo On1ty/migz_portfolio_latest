@@ -17,14 +17,12 @@
 .work .job-title {
   color: var(--dark-gray);
   font-size: 1.125rem;
+  font-weight: 500;
 }
 
 .work .company {
   font-size: 1rem;
-  background-color: var(--primary-clr);
-  color: var(--light);
-  padding: 0.1rem 0.2rem;
-  display: inline;
+  color: var(--dark-gray);
 }
 
 .work .job-info {
@@ -33,6 +31,12 @@
   gap: 0.5rem;
   font-size: 0.875rem;
   font-style: italic;
+}
+
+.work .job-info > span {
+  background-color: var(--primary-clr);
+  color: var(--light);
+  padding: 0.1rem 0.3rem;
 }
 
 .work > p + p {

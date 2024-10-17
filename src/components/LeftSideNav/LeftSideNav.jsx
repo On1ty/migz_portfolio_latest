@@ -46,7 +46,7 @@ export default function LeftSideNav() {
     <aside className="left-sidenav">
       <div className="wrapper">
         <div className="profile">
-          <img className="profile__avatar" src={avatarPhoto} alt="avatar" />
+          <img className="profile__avatar" src={avatarPhoto} alt="Juan Miguel's profile picture" />
           <p className="profile__name">
             {firstName} {lastName}
           </p>

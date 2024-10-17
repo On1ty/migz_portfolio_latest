@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900&display=swap"); */
 
 :root {
   --primary-clr: #ffb400;
@@ -35,7 +39,11 @@ body,
 html {
   margin: 0;
   padding: 0;
+  /* font-family: "Libre Baskerville", serif; */
+  /* font-family: "Roboto Slab", serif; */
+  /* font-family: "Lora", serif; */
   font-family: "Libre Baskerville", serif;
+  font-optical-sizing: auto;
   min-height: 100vh;
   min-height: 100dvh;
 }
@@ -80,6 +88,16 @@ h6 {
 ul[role="list"],
 ol[role="list"] {
   list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  font-style: italic;
+  background-repeat: no-repeat;
+  background-size: cover;
+  shape-margin: 0.75rem;
 }
 
 /* Set core root defaults */
