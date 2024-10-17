@@ -90,6 +90,7 @@ html {
 section {
     max-width: min(100% - 2rem, 200ch);
     margin-inline: auto;
+    scroll-margin: 1.5rem 0 0 0;
 }
 
 section+section {
