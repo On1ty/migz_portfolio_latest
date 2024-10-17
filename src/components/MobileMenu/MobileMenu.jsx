@@ -20,7 +20,7 @@ export default function MobileMenu() {
     <div className="mobile-menu" data-mobile-menu="" onClick={linkClick}>
       <ul>
         {navItems.map((nav) => (
-          <li>
+          <li key={nav.title}>
             <a href={nav.href}>{nav.title}</a>
           </li>
         ))}
