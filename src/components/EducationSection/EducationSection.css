@@ -26,6 +26,7 @@
 .capstone {
   font-weight: 500;
   color: var(--dark-gray);
+  font-size: 1.125rem;
 }
 
 .batchYear {
