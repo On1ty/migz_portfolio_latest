@@ -1,5 +1,5 @@
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import heroPhoto from "../../assets/company-photoshoot.jpeg";
+import heroPhoto from "../../assets/company-photoshoot.png";
 import placeholderHeroPhoto from "../../assets/placeholder-company-photoshoot.jpg";
 import HireMeBtn from "../HireMeBtn/HireMeBtn";
 import "./HeroSection.css";
