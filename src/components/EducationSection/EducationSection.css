@@ -1,36 +1,40 @@
 .education {
-    background-color: var(--light);
-    padding-inline: 3rem;
-    border-radius: .3em;
+  background-color: var(--light);
+  /* padding-inline: 3rem; */
+  border-radius: 0.3em;
 }
 
 .education-item {
-    display: grid;
-    grid-template-columns: .5fr 1fr;
-    padding-block: 3rem;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  padding-block: 3rem;
+  gap: 1rem;
+  width: 100%;
+  max-width: calc(100% - 5rem);
+  margin-inline: auto;
 }
 
 .education-item:not(:last-child) {
-    border-bottom: .150rem solid var(--light-gray);
+  border-bottom: 0.15rem solid var(--light-gray);
 }
 
-.education-item>div>*:not(:last-child) {
-    margin-bottom: 1rem;
+.education-item > div > *:not(:last-child) {
+  margin-bottom: 1rem;
 }
 
 .institution,
 .capstone {
-    font-weight: 500;
-    color: var(--dark-gray);
+  font-weight: 500;
+  color: var(--dark-gray);
 }
 
 .batchYear {
-    background-color: var(--primary-clr);
-    color: var(--light);
-    padding: .1rem .4rem;
+  background-color: var(--primary-clr);
+  color: var(--light);
+  padding: 0.1rem 0.4rem;
 }
 
 .capstone-desc {
-    font-size: 0.938rem;
-    text-align: justify;
+  font-size: 0.938rem;
+  text-align: justify;
 }
