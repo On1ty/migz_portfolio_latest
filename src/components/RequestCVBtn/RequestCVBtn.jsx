@@ -4,9 +4,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function RequestCVBtn() {
   return (
-    <button className="download-cv">
-      Request CV
-      <FontAwesomeIcon icon={faDownload} />
-    </button>
+    <a
+      className="button download-cv"
+      href="/public/JUAN_MIGUEL_PALLO_RESUME_UPDATED_JULY_2024.pdf"
+      download="Resume - Juan Miguel Pallo.pdf"
+    >
+      Download CV
+      {/* <FontAwesomeIcon icon={faDownload} /> */}
+    </a>
   );
 }

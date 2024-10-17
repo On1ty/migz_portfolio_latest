@@ -1,13 +1,13 @@
 .download-cv {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    align-items: center;
-    max-width: 100%;
-    padding-inline: 1rem;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 0.875rem;
-    letter-spacing: .050rem;
-    border: .1em solid var(--dark-gray);
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  max-width: 100% !important;
+  padding-inline: 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.875rem !important;
+  letter-spacing: 0.06rem;
+  border: 0.1em solid var(--dark-gray);
 }
