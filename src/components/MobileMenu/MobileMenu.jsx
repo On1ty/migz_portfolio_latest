@@ -8,24 +8,22 @@ export default function MobileMenu() {
     }
   }
 
+  const navItems = [
+    { href: "#hero", title: "Migz" },
+    { href: "#techStack", title: "Tech Stack" },
+    { href: "#education", title: "Education" },
+    { href: "#workHistory", title: "Work History" },
+    { href: "#contact", title: "Contact" },
+  ];
+
   return (
     <div className="mobile-menu" data-mobile-menu="" onClick={linkClick}>
       <ul>
-        <li>
-          <a href="#">Migz</a>
-        </li>
-        <li>
-          <a href="#">Tech Stack</a>
-        </li>
-        <li>
-          <a href="#">Education</a>
-        </li>
-        <li>
-          <a href="#">Work History</a>
-        </li>
-        <li>
-          <a href="#">Projects</a>
-        </li>
+        {navItems.map((nav) => (
+          <li>
+            <a href={nav.href}>{nav.title}</a>
+          </li>
+        ))}
       </ul>
     </div>
   );
