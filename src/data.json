@@ -1,133 +1,133 @@
 {
-    "firstName": "Juan Miguel",
-    "middleName": "",
-    "lastName": "Pallo",
-    "nickname": "Migz",
-    "province": "Bulacan",
-    "city": "Santa Maria",
-    "country": "PH",
-    "freelance": true,
-    "birthday": "January 03, 1999",
-    "currentJob": "Software Developer",
-    "statement": "Experienced software developer with five years of expertise in diverse programming languages and strong problem-solving skills, eager to contribute to innovative and challenging projects.",
-    "socialMedia": [
-        {
-            "name": "Facebook",
-            "reactIcon": "faFacebookF",
-            "url": "https://www.facebook.com/JuwaaaanMig/"
-        },
-        {
-            "name": "Instagram",
-            "reactIcon": "faInstagram",
-            "url": "https://www.instagram.com/callmemigss/"
-        },
-        {
-            "name": "LinkedIn",
-            "reactIcon": "faLinkedinIn",
-            "url": "https://www.linkedin.com/in/juan-miguel-pallo-0175561a1/"
-        }
-    ],
-    "extraSkills": [
-        {
-            "name": "Bootstrap",
-            "reactIcon": "faBootstrap"
-        },
-        {
-            "name": "Sass",
-            "reactIcon": "faSass"
-        },
-        {
-            "name": "Adobe Photoshop",
-            "reactIcon": "faImages"
-        },
-        {
-            "name": "Github",
-            "reactIcon": "faGithub"
-        },
-        {
-            "name": "Figma",
-            "reactIcon": "faFigma"
-        },
-        {
-            "name": "Unit Testing (NUnit)",
-            "reactIcon": "faVialCircleCheck"
-        },
-        {
-            "name": "TypeScript",
-            "reactIcon": ""
-        }
-    ],
-    "techStack": {
-        "summary": "Skilled in web development and software engineering, I specialize in creating dynamic applications and robust backend solutions across multiple platforms.",
-        "tech": [
-            {
-                "name": "HTML 5",
-                "yearsExp": "5",
-                "reactIcon": "faHtml5"
-            },
-            {
-                "name": "CSS 3",
-                "yearsExp": "5",
-                "reactIcon": "faCss3Alt"
-            },
-            {
-                "name": "Angular",
-                "yearsExp": "2",
-                "reactIcon": "faAngular"
-            },
-            {
-                "name": "JavaScript",
-                "yearsExp": "5",
-                "reactIcon": "faJsSquare"
-            },
-            {
-                "name": "Git",
-                "yearsExp": "4",
-                "reactIcon": "faGitAlt"
-            },
-            {
-                "name": "C# (ASP.net MVC and WebForms)",
-                "yearsExp": "3",
-                "reactIcon": ""
-            },
-            {
-                "name": "Ionic",
-                "yearsExp": "2",
-                "reactIcon": ""
-            },
-            {
-                "name": "Database (MySQL, SQLite)",
-                "yearsExp": "3",
-                "reactIcon": "faDatabase"
-            },
-            {
-                "name": "jQuery",
-                "yearsExp": "5",
-                "reactIcon": ""
-            },
-            {
-                "name": "React",
-                "yearsExp": "1",
-                "reactIcon": "faReact"
-            }
-        ]
+  "firstName": "Juan Miguel",
+  "middleName": "",
+  "lastName": "Pallo",
+  "nickname": "Migz",
+  "province": "Bulacan",
+  "city": "Santa Maria",
+  "country": "PH",
+  "freelance": true,
+  "birthday": "January 03, 1999",
+  "currentJob": "Software Developer",
+  "statement": "Experienced software developer with five years of expertise in diverse programming languages and strong problem-solving skills, eager to contribute to innovative and challenging projects.",
+  "socialMedia": [
+    {
+      "name": "Facebook",
+      "reactIcon": "faFacebookF",
+      "url": "https://www.facebook.com/JuwaaaanMig/"
     },
-    "educationHistory": {
-        "summary": "Holder of a Bachelor’s degree in Computer Science with a strong foundation in frontend development, backend solutions, and experience in robotics.",
-        "education": [
-            {
-                "degree": "Bachelor of Science in Computer Science",
-                "institution": "University of Caloocan City",
-                "batchYear": "2018-2019",
-                "capstone": "Home Companion Robot (HOCOBOT)",
-                "capstoneDescription": "Hocobot is a personal home companion robot that will greatly help us in things we do. From checking weather condition, looking for an answer on internet, finding things on web and even surveillance of the house. He is equipped with different sensor to detect the conditions of the surrounding and Artifical Intelligence that help him in decision making. We use microprocessor instead of micro-controller for better machine learning capabilities."
-            }
-        ]
+    {
+      "name": "Instagram",
+      "reactIcon": "faInstagram",
+      "url": "https://www.instagram.com/callmemigss/"
     },
-    "workHistory": [
-        {}
-    ],
-    "projects": [
-        {}
+    {
+      "name": "LinkedIn",
+      "reactIcon": "faLinkedinIn",
+      "url": "https://www.linkedin.com/in/juan-miguel-pallo-0175561a1/"
+    }
+  ],
+  "extraSkills": [
+    {
+      "name": "Bootstrap",
+      "reactIcon": "faBootstrap"
+    },
+    {
+      "name": "Sass",
+      "reactIcon": "faSass"
+    },
+    {
+      "name": "Adobe Photoshop",
+      "reactIcon": "faImages"
+    },
+    {
+      "name": "Github",
+      "reactIcon": "faGithub"
+    },
+    {
+      "name": "Figma",
+      "reactIcon": "faFigma"
+    },
+    {
+      "name": "Unit Testing (NUnit)",
+      "reactIcon": "faVialCircleCheck"
+    },
+    {
+      "name": "TypeScript",
+      "reactIcon": ""
+    },
+    {
+      "name": "PHP (CI & Laravel)",
+      "reactIcon": "faPhp"
+    }
+  ],
+  "techStack": {
+    "summary": "Skilled in web development and software engineering, I specialize in creating dynamic applications and robust backend solutions across multiple platforms.",
+    "tech": [
+      {
+        "name": "HTML 5",
+        "yearsExp": "5",
+        "reactIcon": "faHtml5"
+      },
+      {
+        "name": "CSS 3",
+        "yearsExp": "5",
+        "reactIcon": "faCss3Alt"
+      },
+      {
+        "name": "Angular",
+        "yearsExp": "2",
+        "reactIcon": "faAngular"
+      },
+      {
+        "name": "JavaScript",
+        "yearsExp": "5",
+        "reactIcon": "faJsSquare"
+      },
+      {
+        "name": "Git",
+        "yearsExp": "4",
+        "reactIcon": "faGitAlt"
+      },
+      {
+        "name": "C# (ASP.net MVC and WebForms)",
+        "yearsExp": "3",
+        "reactIcon": ""
+      },
+      {
+        "name": "Ionic",
+        "yearsExp": "2",
+        "reactIcon": ""
+      },
+      {
+        "name": "Database (MySQL, SQLite)",
+        "yearsExp": "3",
+        "reactIcon": "faDatabase"
+      },
+      {
+        "name": "jQuery",
+        "yearsExp": "5",
+        "reactIcon": ""
+      },
+      {
+        "name": "React",
+        "yearsExp": "1",
+        "reactIcon": "faReact"
+      }
     ]
+  },
+  "educationHistory": {
+    "summary": "Holder of a Bachelor’s degree in Computer Science with a strong foundation in frontend development, backend solutions, and experience in robotics.",
+    "education": [
+      {
+        "degree": "Bachelor of Science in Computer Science",
+        "institution": "University of Caloocan City",
+        "batchYear": "2018-2019",
+        "capstone": "Home Companion Robot (HOCOBOT)",
+        "capstoneDescription": "Hocobot is a personal home companion robot that will greatly help us in things we do. From checking weather condition, looking for an answer on internet, finding things on web and even surveillance of the house. He is equipped with different sensor to detect the conditions of the surrounding and Artifical Intelligence that help him in decision making. We use microprocessor instead of micro-controller for better machine learning capabilities."
+      }
+    ]
+  },
+  "workHistory": [{}],
+  "projects": [{}]
 }

@@ -8,6 +8,7 @@ import {
   faBootstrap,
   faFigma,
   faGithub,
+  faPhp,
   faSass,
 } from "@fortawesome/free-brands-svg-icons";
 import { faVialCircleCheck } from "@fortawesome/free-solid-svg-icons/faVialCircleCheck";
@@ -38,6 +39,7 @@ export default function LeftSideNav() {
     faGithub: faGithub,
     faFigma: faFigma,
     faVialCircleCheck: faVialCircleCheck,
+    faPhp: faPhp,
   };
 
   return (

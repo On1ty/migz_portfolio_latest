@@ -110,7 +110,7 @@
     grid-template-columns: 2rem 1fr;
     gap: .5rem;
     align-items: center;
-    margin-block: .2rem;
+    margin-block: .5rem;
 }
 
 .extra-skills ul>li>svg {
