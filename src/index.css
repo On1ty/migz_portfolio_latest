@@ -216,6 +216,14 @@ section > .summary {
     max-width: calc(100% - 3rem);
   }
 
+  .work-history .work {
+    max-width: calc(100% - 3rem);
+  }
+
+  .work .job-info {
+    flex-direction: column;
+  }
+
   .tech-stack {
     grid-template-columns: repeat(3, 1fr);
   }

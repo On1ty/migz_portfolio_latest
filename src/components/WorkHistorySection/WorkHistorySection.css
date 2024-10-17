@@ -1,0 +1,55 @@
+.work-history {
+  background-color: var(--light);
+  border-radius: 0.3em;
+}
+
+.work-history .work {
+  padding-block: 3rem;
+  width: 100%;
+  max-width: calc(100% - 5rem);
+  margin-inline: auto;
+}
+
+.work:not(:last-child) {
+  border-bottom: 0.15rem solid var(--light-gray);
+}
+
+.work .job-title {
+  color: var(--dark-gray);
+  font-size: 1.125rem;
+}
+
+.work .company {
+  font-size: 1rem;
+  background-color: var(--primary-clr);
+  color: var(--light);
+  padding: 0.1rem 0.2rem;
+  display: inline;
+}
+
+.work .job-info {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  font-style: italic;
+}
+
+.work > p + p {
+  margin-top: 0.3rem;
+}
+
+.work .responsibilities p {
+  margin-top: 1rem;
+  font-size: 0.938rem;
+}
+
+.work .responsibilities ul {
+  list-style: square;
+  padding-left: 1.5rem;
+}
+
+.work .responsibilities ul > li {
+  margin-block: 0.3rem;
+  font-size: 0.938rem;
+}

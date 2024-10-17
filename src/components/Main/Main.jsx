@@ -3,6 +3,7 @@ import "./Main.css";
 import data from "../../data.json";
 import TechSection from "../TechSection/TechSection";
 import EducationSection from "../EducationSection/EducationSection";
+import WorkHistorySection from "../WorkHistorySection/WorkHistorySection";
 
 export default function Main() {
   // console.log(data);
@@ -13,6 +14,7 @@ export default function Main() {
       <HeroSection anchorId="hero" data={data} />
       <TechSection anchorId="techStack" data={data.techStack} />
       <EducationSection anchorId="education" data={data.educationHistory} />
+      <WorkHistorySection anchorId="workHistory" data={data.workHistory}/>.
     </main>
   );
 }

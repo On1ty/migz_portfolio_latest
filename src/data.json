@@ -128,6 +128,58 @@
       }
     ]
   },
-  "workHistory": [{}],
+  "workHistory": {
+    "summary": "Junior Programmer at Arbitrage Inc., built an attendance system and backend. At Salary.com, worked on front-end development and site upgrades. Now a Software Developer at Bastion Inc., handling front-end, mobile apps, various web projects, and backend tasks.",
+    "work": [
+      {
+        "jobTitle": "Software Developer",
+        "company": "Bastion Incorporated",
+        "startMonth": "February",
+        "startYear": "2022",
+        "endMonth": "",
+        "endYear": "",
+        "currentWork": true,
+        "location": "Makati City, PH",
+        "responsibilities": [
+          "Front-end developer for the company's online banking web system",
+          "Developed a specialized application to convert CSV files to MDB format, with command-line interface functionality",
+          "Mobile developer for the company's online banking authenticator application (Android/iOS)",
+          "Front-end developer for the company's online museum platform",
+          "Developer for an online registration website for the Municipality of Bacoor, Cavite",
+          "Contributor to the development of Bastion's corporate website"
+        ]
+      },
+      {
+        "jobTitle": "Software Developer",
+        "company": "Salary.com",
+        "startMonth": "April",
+        "startYear": "2021",
+        "endMonth": "February",
+        "endYear": "2022",
+        "currentWork": false,
+        "location": "Beijing, China",
+        "responsibilities": [
+          "Implemented front-end webpages based on design mockups",
+          "Modernized the company website to leverage latest web technologies",
+          "Resolved JavaScript bugs and optimized website performance"
+        ]
+      },
+      {
+        "jobTitle": "Junior Programmer",
+        "company": "Arbitrage Incorporated",
+        "startMonth": "May",
+        "startYear": "2019",
+        "endMonth": "April",
+        "endYear": "2021",
+        "currentWork": false,
+        "location": "Quezon City, PH",
+        "responsibilities": [
+          "Contributed to the development of the Attendance System for Arbitrage Inc",
+          "Developed the backend of Arbitrage's website using native PHP",
+          "Performed computer setup and configuration for clients"
+        ]
+      }
+    ]
+  },
   "projects": [{}]
 }
