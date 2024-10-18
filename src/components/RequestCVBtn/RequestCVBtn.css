@@ -9,5 +9,5 @@
   font-weight: 600;
   font-size: 0.875rem !important;
   letter-spacing: 0.06rem;
-  border: 0.1em solid var(--dark-gray);
+  border: 0.1em solid var(--dark-gray) !important;
 }
