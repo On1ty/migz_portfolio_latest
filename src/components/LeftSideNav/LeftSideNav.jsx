@@ -59,7 +59,7 @@ export default function LeftSideNav() {
           </div>
           <span>{age}</span>
           <div>
-            <span>Residence</span>
+            <span>Country</span>
           </div>
           <span>{country}</span>
           <div>
