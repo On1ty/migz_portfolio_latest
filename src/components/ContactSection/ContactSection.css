@@ -45,7 +45,7 @@
 .contact .info > div > div *:first-child {
   font-size: 1.063rem;
   font-weight: var(--font-medium);
-  color: var(--primary-clr);
+  /* color: var(--primary-clr); */
 }
 
 .contact .info > div > div *:last-child {
