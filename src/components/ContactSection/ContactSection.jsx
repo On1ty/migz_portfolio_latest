@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLink, faMap, faPhone } from "@fortawesome/free-solid-svg-icons";
 import "./ContactSection.css";
 import { useState } from "react";
+import emailjs from "@emailjs/browser";
 
 export default function ContactSection({
   anchorId,
@@ -11,6 +12,7 @@ export default function ContactSection({
   city,
   province,
 }) {
+  const [submitDisabled, setSubmitDisabled] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -34,12 +36,29 @@ export default function ContactSection({
     });
   }
 
-  function handleSubmit(e) {
+  async function handleSubmit(e) {
     e.preventDefault();
 
-    console.log(formData);
+    const emailJsServiceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+    const emailJsTemplateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+    const emailJsPublicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
-    resetForm();
+    try {
+      setSubmitDisabled(true);
+
+      console.log("Email sending...");
+
+      await emailjs.sendForm(emailJsServiceId, emailJsTemplateId, e.target, {
+        publicKey: emailJsPublicKey,
+      });
+
+      console.log("Message sent!");
+      resetForm();
+    } catch (error) {
+      console.error("Failed to send the message...", error.text);
+    } finally {
+      setSubmitDisabled(false);
+    }
   }
 
   return (
@@ -55,6 +74,7 @@ export default function ContactSection({
                   type="text"
                   required
                   id="name"
+                  name="user_name"
                   autoComplete="off"
                   value={formData.name}
                   maxLength="60"
@@ -68,6 +88,7 @@ export default function ContactSection({
                   id="email"
                   autoComplete="off"
                   required
+                  name="user_email"
                   maxLength="60"
                   value={formData.email}
                   onChange={handleChange}
@@ -76,15 +97,17 @@ export default function ContactSection({
               <div>
                 <label htmlFor="message">Your Message</label>
                 <textarea
-                  name=""
                   id="message"
                   required
                   autoComplete="off"
+                  name="user_message"
                   value={formData.message}
                   onChange={handleChange}
                 ></textarea>
               </div>
-              <button type="submit">Send Message</button>
+              <button type="submit" disabled={submitDisabled}>
+                Send Message
+              </button>
             </form>
           </div>
         </div>
