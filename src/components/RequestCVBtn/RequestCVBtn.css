@@ -6,7 +6,7 @@
   max-width: 100% !important;
   padding-inline: 1rem;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: var(--font-semi-bold);
   font-size: 0.875rem !important;
   letter-spacing: 0.06rem;
   border: 0.1em solid var(--dark-gray) !important;

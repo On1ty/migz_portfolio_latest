@@ -24,7 +24,7 @@
 
 .institution,
 .capstone {
-  font-weight: 500;
+  font-weight: var(--font-medium);
   color: var(--dark-gray);
   font-size: 1.125rem;
 }

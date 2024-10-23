@@ -1,8 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
-/* @import url("https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900&display=swap"); */
 
 :root {
   --primary-clr: #ffb400;
@@ -21,6 +17,13 @@
   --right-nav-bg: #fafafa;
   --success-clr: #198754;
   --error-clr: #dc3545;
+
+  --font-libre: "Libre Baskerville", serif;
+
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold: 700;
 }
 
 *,
@@ -39,10 +42,7 @@ body,
 html {
   margin: 0;
   padding: 0;
-  /* font-family: "Libre Baskerville", serif; */
-  /* font-family: "Roboto Slab", serif; */
-  /* font-family: "Lora", serif; */
-  font-family: "Libre Baskerville", serif;
+  font-family: var(--font-libre);
   font-optical-sizing: auto;
   min-height: 100vh;
   min-height: 100dvh;
@@ -124,7 +124,7 @@ button,
   padding: 0.625rem 0;
   max-width: 10rem;
   width: 100%;
-  font-weight: 600;
+  font-weight: var(--font-semi-bold);
   transition: color 0.3s ease;
   font-size: 1rem;
   border-radius: 0.2em;
@@ -166,7 +166,7 @@ button.small,
 
 section > .sub-header {
   text-align: center;
-  font-weight: 700;
+  font-weight: var(--font-bold);
 }
 
 section > .summary {
