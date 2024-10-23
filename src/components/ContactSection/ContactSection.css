@@ -1,0 +1,71 @@
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr;
+  gap: 2rem;
+}
+
+.contact > div {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contact .message-me,
+.contact .info {
+  background-color: var(--light);
+  padding: 1.3rem 1.3rem;
+  border-radius: 0.3em;
+}
+
+.contact .sub-header {
+  font-weight: var(--font-bold);
+}
+
+.contact .info > div > div {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: space-between;
+  margin-block: 0.7rem;
+  align-items: center;
+}
+
+.contact .info a {
+  color: var(--primary-clr);
+  text-decoration: none;
+  font-weight: var(--font-semi-bold);
+  display: flex;
+  align-items: center;
+  gap: .2rem;
+}
+
+.contact .info > div {
+  text-align: center;
+}
+
+.contact .info > div > div *:first-child {
+  font-size: 1.063rem;
+  font-weight: var(--font-medium);
+}
+
+.contact .info > div > div *:last-child {
+  font-size: 0.938rem;
+  color: var(--primary-clr);
+}
+
+.contact .icon {
+  height: 1.8rem;
+  aspect-ratio: 1;
+  background-color: var(--primary-clr);
+  color: var(--dark-gray);
+  border-radius: 50%;
+  padding: 0.8rem;
+  margin-block: 1.2rem;
+}
+
+.contact .message-me form > div {
+  margin-bottom: 1rem;
+}
+
+.contact textarea {
+  height: 18.75rem;
+}
