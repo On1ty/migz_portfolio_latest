@@ -71,6 +71,7 @@ export default function ContactSection({
       console.error("Failed to send the message...", error.text);
     } finally {
       setSubmitDisabled(false);
+      swalAlert.close();
 
       swalAlert.fire({
         title: "Message Sent",
