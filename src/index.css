@@ -217,6 +217,21 @@ textarea:focus {
   outline: 0;
 }
 
+/* swal2 custom css*/
+.swal2-title {
+  font-size: 1.5rem;
+  color: var(--dark-gray);
+}
+
+div:where(.swal2-container) .swal2-html-container {
+  font-size: 1rem !important;
+  color: var(--dark-gray);
+}
+
+div:where(.swal2-container) button:where(.swal2-styled):where(.swal2-confirm) {
+  background-color: var(--primary-clr) !important;
+}
+
 @media screen and (max-width: 93em) {
   /* .hero-photo {
         width: 20rem;

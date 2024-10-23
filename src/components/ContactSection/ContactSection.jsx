@@ -3,6 +3,8 @@ import { faLink, faMap, faPhone } from "@fortawesome/free-solid-svg-icons";
 import "./ContactSection.css";
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
+import Swal from "sweetalert2";
+import withReactContent from "sweetalert2-react-content";
 
 export default function ContactSection({
   anchorId,
@@ -43,7 +45,18 @@ export default function ContactSection({
     const emailJsTemplateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
     const emailJsPublicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
+    const swalAlert = withReactContent(Swal);
+
     try {
+      swalAlert.fire({
+        title: "Sending...",
+        allowOutsideClick: false,
+        allowEscapeKey: false,
+        didOpen: () => {
+          swalAlert.showLoading();
+        },
+      });
+
       setSubmitDisabled(true);
 
       console.log("Email sending...");
@@ -58,6 +71,13 @@ export default function ContactSection({
       console.error("Failed to send the message...", error.text);
     } finally {
       setSubmitDisabled(false);
+
+      swalAlert.fire({
+        title: "Message Sent",
+        text: "Thanks! I'll get back to you soon with a thoughtful response.",
+        allowOutsideClick: false,
+        allowEscapeKey: false,
+      });
     }
   }
 
@@ -65,7 +85,7 @@ export default function ContactSection({
     <section id={anchorId}>
       <div className="contact">
         <div>
-          <h2 className="sub-header">Message me!</h2>
+          <h2 className="sub-header">Leave me a message</h2>
           <div className="message-me">
             <form onSubmit={handleSubmit} method="post">
               <div>
