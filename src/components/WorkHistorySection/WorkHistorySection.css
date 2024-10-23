@@ -37,6 +37,7 @@
   background-color: var(--primary-clr);
   color: var(--light);
   padding: 0.1rem 0.3rem;
+  width: fit-content;
 }
 
 .work > p + p {
