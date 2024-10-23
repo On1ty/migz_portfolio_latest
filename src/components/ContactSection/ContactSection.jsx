@@ -66,12 +66,6 @@ export default function ContactSection({
       });
 
       console.log("Message sent!");
-      resetForm();
-    } catch (error) {
-      console.error("Failed to send the message...", error.text);
-    } finally {
-      setSubmitDisabled(false);
-      swalAlert.close();
 
       swalAlert.fire({
         title: "Message Sent",
@@ -79,6 +73,20 @@ export default function ContactSection({
         allowOutsideClick: false,
         allowEscapeKey: false,
       });
+
+      resetForm();
+    } catch (error) {
+
+      swalAlert.fire({
+        title: "Message Failed",
+        text: "Sorry there was a problem while sending email. Please try again later.",
+        allowOutsideClick: false,
+        allowEscapeKey: false,
+      });
+
+      console.error("Failed to send the message...", error.text);
+    } finally {
+      setSubmitDisabled(false);
     }
   }
 
