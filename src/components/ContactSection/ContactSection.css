@@ -30,7 +30,7 @@
 }
 
 .contact .info a {
-  color: var(--primary-clr);
+  color: var(--dark-gray);
   text-decoration: none;
   font-weight: var(--font-semi-bold);
   display: flex;
@@ -45,11 +45,12 @@
 .contact .info > div > div *:first-child {
   font-size: 1.063rem;
   font-weight: var(--font-medium);
+  color: var(--primary-clr);
 }
 
 .contact .info > div > div *:last-child {
   font-size: 0.938rem;
-  color: var(--primary-clr);
+  color: var(--dark-gray);
 }
 
 .contact .icon {

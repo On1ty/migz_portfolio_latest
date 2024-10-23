@@ -14,7 +14,6 @@ export default function ContactSection({
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    subject: "",
     message: "",
   });
 
@@ -31,7 +30,6 @@ export default function ContactSection({
     setFormData({
       name: "",
       email: "",
-      subject: "",
       message: "",
     });
   }
@@ -72,17 +70,6 @@ export default function ContactSection({
                   required
                   maxLength="60"
                   value={formData.email}
-                  onChange={handleChange}
-                />
-              </div>
-              <div>
-                <label htmlFor="subject">Subject</label>
-                <input
-                  type="text"
-                  id="subject"
-                  autoComplete="off"
-                  value={formData.subject}
-                  maxLength="100"
                   onChange={handleChange}
                 />
               </div>
