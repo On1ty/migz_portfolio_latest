@@ -139,6 +139,13 @@ button,
   text-decoration: none;
 }
 
+button:disabled,
+.button:disabled {
+  pointer-events: none;
+  opacity: 0.65;
+  color: var(--btn-hover-clr);
+}
+
 button:hover,
 .button:hover {
   color: var(--btn-hover-clr);
