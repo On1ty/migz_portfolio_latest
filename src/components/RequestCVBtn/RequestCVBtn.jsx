@@ -6,7 +6,7 @@ export default function RequestCVBtn() {
   return (
     <a
       className="button download-cv"
-      href="/public/JUAN_MIGUEL_PALLO_RESUME_UPDATED_JULY_2024.pdf"
+      href="/JUAN_MIGUEL_PALLO_RESUME_UPDATED_JULY_2024.pdf"
       download="Resume - Juan Miguel Pallo.pdf"
     >
       Download CV
