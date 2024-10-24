@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/7d35d47a-b3c0-4824-bb92-6b23115fd127/deploy-status)](https://app.netlify.com/sites/migz/deploys)
+
 # My Portfolio Website
 
 Welcome to the repository of my personal portfolio website! This project showcases my skills, projects, and experience in web development.
