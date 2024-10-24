@@ -47,11 +47,11 @@ export default function ContactSection({
     const emailJsTemplateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
     const emailJsPublicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
-    console.log({
-      emailJsServiceId,
-      emailJsTemplateId,
-      emailJsPublicKey,
-    });
+    // console.log({
+    //   emailJsServiceId,
+    //   emailJsTemplateId,
+    //   emailJsPublicKey,
+    // });
 
     try {
       SwalAlert.fire({
@@ -65,7 +65,7 @@ export default function ContactSection({
 
       setSubmitDisabled(true);
 
-      console.log("Email sending...");
+      // console.log("Email sending...");
 
       const emailResult = await emailjs.sendForm(
         emailJsServiceId,
@@ -76,8 +76,8 @@ export default function ContactSection({
         }
       );
 
-      console.log(emailResult);
-      console.log("Message sent!");
+      // console.log(emailResult);
+      // console.log("Message sent!");
 
       SwalAlert.fire({
         title: "Message Sent",
@@ -103,7 +103,7 @@ export default function ContactSection({
         },
       });
 
-      console.error("Failed to send the message...", error);
+      // console.error("Failed to send the message...", error);
     } finally {
       setSubmitDisabled(false);
     }
