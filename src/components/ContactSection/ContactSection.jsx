@@ -6,6 +6,8 @@ import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
 import withReactContent from "sweetalert2-react-content";
 
+const SwalAlert = withReactContent(Swal);
+
 export default function ContactSection({
   anchorId,
   email,
@@ -45,15 +47,19 @@ export default function ContactSection({
     const emailJsTemplateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
     const emailJsPublicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
-    const swalAlert = withReactContent(Swal);
+    console.log({
+      emailJsServiceId,
+      emailJsTemplateId,
+      emailJsPublicKey,
+    });
 
     try {
-      swalAlert.fire({
+      SwalAlert.fire({
         title: "Sending...",
         allowOutsideClick: false,
         allowEscapeKey: false,
         didOpen: () => {
-          swalAlert.showLoading();
+          SwalAlert.showLoading();
         },
       });
 
@@ -61,30 +67,43 @@ export default function ContactSection({
 
       console.log("Email sending...");
 
-      await emailjs.sendForm(emailJsServiceId, emailJsTemplateId, e.target, {
-        publicKey: emailJsPublicKey,
-      });
+      const emailResult = await emailjs.sendForm(
+        emailJsServiceId,
+        emailJsTemplateId,
+        e.target,
+        {
+          publicKey: emailJsPublicKey,
+        }
+      );
 
+      console.log(emailResult);
       console.log("Message sent!");
 
-      swalAlert.fire({
+      SwalAlert.fire({
         title: "Message Sent",
         text: "Thanks! I'll get back to you soon with a thoughtful response.",
         allowOutsideClick: false,
         allowEscapeKey: false,
+        icon: "success",
+        didOpen: () => {
+          SwalAlert.hideLoading();
+        },
       });
 
       resetForm();
     } catch (error) {
-
-      swalAlert.fire({
+      SwalAlert.fire({
         title: "Message Failed",
         text: "Sorry there was a problem while sending email. Please try again later.",
         allowOutsideClick: false,
         allowEscapeKey: false,
+        icon: "error",
+        didOpen: () => {
+          SwalAlert.hideLoading();
+        },
       });
 
-      console.error("Failed to send the message...", error.text);
+      console.error("Failed to send the message...", error);
     } finally {
       setSubmitDisabled(false);
     }
