@@ -10,9 +10,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import "./RightSideNav.css";
 
-export default function RightSideNav() {
-  const [activeLink, setActiveLink] = useState("#hero");
-
+export default function RightSideNav({ activeSection }) {
   const navItems = [
     { href: "#hero", icon: faUserSecret },
     { href: "#techStack", icon: faLaptopCode },
@@ -29,8 +27,8 @@ export default function RightSideNav() {
             <li key={href}>
               <a
                 href={href}
-                className={activeLink === href ? "active" : ""}
-                onClick={() => setActiveLink(href)}>
+                className={activeSection === href.substring(1) ? "active" : ""}
+              >
                 <FontAwesomeIcon icon={icon} />
               </a>
             </li>

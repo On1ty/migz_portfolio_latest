@@ -1,10 +1,11 @@
+import { forwardRef } from "react";
 import "./EducationSection.css";
 
-export default function EducationSection({ anchorId, data }) {
+export default forwardRef(function EducationSection({ anchorId, data }, ref) {
   const { summary, education } = data;
 
   return (
-    <section id={anchorId}>
+    <section id={anchorId} ref={ref}>
       <h2 className="sub-header">Education</h2>
       <p className="summary">{summary}</p>
       <div className="education">
@@ -31,4 +32,4 @@ export default function EducationSection({ anchorId, data }) {
       </div>
     </section>
   );
-}
+});

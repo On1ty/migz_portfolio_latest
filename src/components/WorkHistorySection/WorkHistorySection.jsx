@@ -1,9 +1,10 @@
+import { forwardRef } from "react";
 import "./WorkHistorySection.css";
 
-export default function WorkHistorySection({ anchorId, data }) {
+export default forwardRef(function WorkHistorySection({ anchorId, data }, ref) {
   const { summary, work } = data;
   return (
-    <section id={anchorId}>
+    <section id={anchorId} ref={ref}>
       <h2 className="sub-header">Work History</h2>
       <p className="summary">{summary}</p>
       <div className="work-history">
@@ -43,4 +44,4 @@ export default function WorkHistorySection({ anchorId, data }) {
       </div>
     </section>
   );
-}
+});

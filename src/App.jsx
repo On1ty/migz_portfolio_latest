@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./App.css";
 import LeftSideNav from "./components/LeftSideNav/LeftSideNav";
 import Main from "./components/Main/Main";
@@ -5,16 +6,16 @@ import MobileMenu from "./components/MobileMenu/MobileMenu";
 import MobileNav from "./components/MobileNav/MobileNav";
 import RightSideNav from "./components/RightSideNav/RightSideNav";
 
-function App() {
+export default function App() {
+  const [activeSection, setActiveSection] = useState("hero");
+
   return (
     <>
       <LeftSideNav />
-      <Main />
-      <RightSideNav />
+      <Main setActiveSection={setActiveSection} />
+      <RightSideNav activeSection={activeSection} />
       <MobileNav />
       <MobileMenu />
     </>
   );
 }
-
-export default App;

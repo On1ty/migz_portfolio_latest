@@ -1,21 +1,17 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLink, faMap, faPhone } from "@fortawesome/free-solid-svg-icons";
 import "./ContactSection.css";
-import { useState } from "react";
+import { forwardRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
 import withReactContent from "sweetalert2-react-content";
 
 const SwalAlert = withReactContent(Swal);
 
-export default function ContactSection({
-  anchorId,
-  email,
-  mobile,
-  country,
-  city,
-  province,
-}) {
+export default forwardRef(function ContactSection(
+  { anchorId, email, mobile, country, city, province },
+  ref
+) {
   const [submitDisabled, setSubmitDisabled] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
@@ -110,7 +106,7 @@ export default function ContactSection({
   }
 
   return (
-    <section id={anchorId}>
+    <section id={anchorId} ref={ref}>
       <div className="contact">
         <div>
           <h2 className="sub-header">Leave me a message</h2>
@@ -201,4 +197,4 @@ export default function ContactSection({
       </div>
     </section>
   );
-}
+});

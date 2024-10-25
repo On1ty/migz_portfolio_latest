@@ -3,12 +3,13 @@ import heroPhoto from "../../assets/company-photoshoot.png";
 import placeholderHeroPhoto from "../../assets/placeholder-company-photoshoot.jpg";
 import HireMeBtn from "../HireMeBtn/HireMeBtn";
 import "./HeroSection.css";
+import { forwardRef } from "react";
 
-export default function HeroSection({ anchorId, data }) {
+export default forwardRef(function HereSection({ anchorId, data }, ref) {
   const { firstName, lastName, currentJob, statement } = data;
 
   return (
-    <section className="hero" id={anchorId}>
+    <section className="hero" id={anchorId} ref={ref}>
       <div className="hero-left">
         <h1 className="hero-header">
           I'm {firstName} {lastName} <br />
@@ -32,4 +33,4 @@ export default function HeroSection({ anchorId, data }) {
       </div>
     </section>
   );
-}
+});
