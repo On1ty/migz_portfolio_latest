@@ -137,6 +137,9 @@ button,
   font-size: 1rem;
   border-radius: 0.2em;
   text-decoration: none;
+  user-select: none;
+  text-align: center;
+  border: .1em solid var(--dark-gray);
 }
 
 button:disabled,
