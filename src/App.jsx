@@ -15,7 +15,7 @@ export default function App() {
       <Main setActiveSection={setActiveSection} />
       <RightSideNav activeSection={activeSection} />
       <MobileNav />
-      <MobileMenu />
+      <MobileMenu activeSection={activeSection}/>
     </>
   );
 }

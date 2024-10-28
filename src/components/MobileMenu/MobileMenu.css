@@ -21,16 +21,21 @@
   visibility: visible;
 }
 
-.mobile-menu.active ul {
+.mobile-menu ul {
   padding-left: 1rem;
   list-style: none;
 }
 
-.mobile-menu.active a {
+.mobile-menu a {
   text-decoration: none;
   color: var(--dark-gray);
+  user-select: none;
 }
 
-.mobile-menu.active a:hover {
+.mobile-menu a:hover {
   color: var(--primary-clr);
+}
+
+.mobile-menu .link-active {
+  color: var(--primary-clr) !important;
 }

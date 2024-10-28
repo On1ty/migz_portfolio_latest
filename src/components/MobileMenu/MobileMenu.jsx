@@ -1,12 +1,19 @@
 import "./MobileMenu.css";
 
-export default function MobileMenu() {
+export default function MobileMenu({ activeSection }) {
   function linkClick(e) {
     if (e.target.tagName === "A") {
       e.currentTarget.classList.remove("active");
       document.body.style.overflow = "";
     }
   }
+
+  function handleResize() {
+    var mobileMenu = document.querySelector("[data-mobile-menu]");
+    mobileMenu.classList.remove("active");
+  }
+
+  window.addEventListener("resize", handleResize);
 
   const navItems = [
     { href: "#hero", title: "Migz" },
@@ -19,9 +26,16 @@ export default function MobileMenu() {
   return (
     <div className="mobile-menu" data-mobile-menu="" onClick={linkClick}>
       <ul>
-        {navItems.map((nav) => (
-          <li key={nav.title}>
-            <a href={nav.href}>{nav.title}</a>
+        {navItems.map(({ title, href }) => (
+          <li key={title}>
+            <a
+              href={href}
+              className={
+                activeSection === href.substring(1) ? "link-active" : ""
+              }
+            >
+              {title}
+            </a>
           </li>
         ))}
       </ul>
