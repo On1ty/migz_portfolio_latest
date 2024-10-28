@@ -6,6 +6,24 @@
   overflow-y: auto;
 }
 
+.left-sidenav .close-left-sidenav {
+  display: none;
+}
+
+.left-sidenav.active {
+  left: 0;
+  box-shadow: 300px 0px 200px 100vh rgba(17, 12, 46, 0.25);
+}
+
+.left-sidenav.active .close-left-sidenav {
+  position: absolute;
+  right: -1.25rem;
+  top: 0.313rem;
+  font-size: 1.5rem;
+  color: var(--primary-clr);
+  display: block;
+}
+
 .left-sidenav .wrapper {
   max-width: calc(100% - 3.5rem);
   margin-inline: auto;
@@ -13,6 +31,7 @@
   height: 100dvh;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .left-sidenav .wrapper > div:not(:last-child) {

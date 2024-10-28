@@ -16,6 +16,14 @@ export default function MobileNav() {
     }
   }
 
+  function handleResize() {
+    var mobileMenu = document.querySelector("[data-mobile-menu]");
+    mobileMenu.classList.remove("active");
+    document.body.style.overflow = "";
+  }
+
+  window.addEventListener("resize", handleResize);
+
   return (
     <nav className="mobile-nav">
       <a className="burger-menu" onClick={burgerMenuClick}>

@@ -8,13 +8,6 @@ export default function MobileMenu({ activeSection }) {
     }
   }
 
-  function handleResize() {
-    var mobileMenu = document.querySelector("[data-mobile-menu]");
-    mobileMenu.classList.remove("active");
-  }
-
-  window.addEventListener("resize", handleResize);
-
   const navItems = [
     { href: "#hero", title: "Migz" },
     { href: "#techStack", title: "Tech Stack" },
@@ -24,7 +17,7 @@ export default function MobileMenu({ activeSection }) {
   ];
 
   return (
-    <div className="mobile-menu" data-mobile-menu="" onClick={linkClick}>
+    <div className="mobile-menu" onClick={linkClick}>
       <ul>
         {navItems.map(({ title, href }) => (
           <li key={title}>

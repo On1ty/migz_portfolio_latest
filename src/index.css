@@ -139,7 +139,7 @@ button,
   text-decoration: none;
   user-select: none;
   text-align: center;
-  border: .1em solid var(--dark-gray);
+  border: 0.1em solid var(--dark-gray);
 }
 
 button:disabled,
@@ -248,9 +248,16 @@ div:where(.swal2-container) button:where(.swal2-styled):where(.swal2-confirm) {
     grid-template-areas: "main";
   }
 
-  .left-sidenav,
   .right-sidenav {
     display: none;
+  }
+
+  .left-sidenav {
+    grid-area: unset;
+    position: fixed;
+    left: -20rem;
+    transition: left 0.2s ease, box-shadow .1s ease;
+    z-index: 1001;
   }
 
   .mobile-nav {

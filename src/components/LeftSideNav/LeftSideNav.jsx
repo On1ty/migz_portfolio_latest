@@ -12,7 +12,7 @@ import {
   faSass,
 } from "@fortawesome/free-brands-svg-icons";
 import { faVialCircleCheck } from "@fortawesome/free-solid-svg-icons/faVialCircleCheck";
-import { faImages } from "@fortawesome/free-solid-svg-icons";
+import { faCircleXmark, faImages } from "@fortawesome/free-solid-svg-icons";
 import { faClone } from "@fortawesome/free-regular-svg-icons";
 import RequestCVBtn from "../RequestCVBtn/RequestCVBtn";
 
@@ -42,11 +42,24 @@ export default function LeftSideNav() {
     faPhp: faPhp,
   };
 
+  function closeLeftSideNav() {
+    var mobileMenu = document.querySelector("[data-mobile-menu]");
+    mobileMenu.classList.remove("active");
+    document.body.style.overflow = "";
+  }
+
   return (
-    <aside className="left-sidenav">
+    <aside className="left-sidenav" data-mobile-menu>
       <div className="wrapper">
+        <span className="close-left-sidenav" onClick={closeLeftSideNav}>
+          <FontAwesomeIcon icon={faCircleXmark} />
+        </span>
         <div className="profile">
-          <img className="profile__avatar" src={avatarPhoto} alt="Juan Miguel's profile picture" />
+          <img
+            className="profile__avatar"
+            src={avatarPhoto}
+            alt="Juan Miguel's profile picture"
+          />
           <p className="profile__name">
             {firstName} {lastName}
           </p>
