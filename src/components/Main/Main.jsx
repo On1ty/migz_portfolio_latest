@@ -9,11 +9,11 @@ import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 
 export default function Main({ setActiveSection }) {
-  const [heroRef, heroInView] = useInView({ threshold: 0.7 });
-  const [techRef, techInView] = useInView({ threshold: 0.7 });
-  const [eduRef, eduInView] = useInView({ threshold: 0.7 });
-  const [workRef, workInView] = useInView({ threshold: 0.7 });
-  const [contactRef, contactInView] = useInView({ threshold: 0.7 });
+  const [heroRef, heroInView] = useInView({ threshold: 0.6 });
+  const [techRef, techInView] = useInView({ threshold: 0.6 });
+  const [eduRef, eduInView] = useInView({ threshold: 0.6 });
+  const [workRef, workInView] = useInView({ threshold: 0.6 });
+  const [contactRef, contactInView] = useInView({ threshold: 0.6 });
 
   useEffect(() => {
     if (heroInView) setActiveSection("hero");
