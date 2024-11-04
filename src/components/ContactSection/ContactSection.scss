@@ -31,15 +31,17 @@
         margin-block: 0.7rem;
         align-items: center;
 
-        *:first-child {
-          font-size: 1.063rem;
-          font-weight: var(--font-medium);
-          /* color: var(--primary-clr); */
-        }
+        * {
+          &:first-child {
+            font-size: 1.063rem;
+            font-weight: var(--font-medium);
+            /* color: var(--primary-clr); */
+          }
 
-        *:last-child {
-          font-size: 0.938rem;
-          color: var(--dark-gray);
+          &:last-child {
+            font-size: 0.938rem;
+            color: var(--dark-gray);
+          }
         }
       }
     }
