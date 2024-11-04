@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLink, faMap, faPhone } from "@fortawesome/free-solid-svg-icons";
-import "./ContactSection.css";
+import "./ContactSection.scss";
 import { forwardRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
