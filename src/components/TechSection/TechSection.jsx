@@ -1,6 +1,6 @@
 import { forwardRef } from "react";
 import TechStack from "../TechStack/TechStack";
-import "./TechSection.css";
+import "./TechSection.scss";
 
 export default forwardRef(function HereSection({ anchorId, data }, ref) {
   const { summary, tech } = data;

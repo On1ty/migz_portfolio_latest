@@ -8,7 +8,7 @@ import {
   faReact,
 } from "@fortawesome/free-brands-svg-icons";
 import { faCode, faDatabase } from "@fortawesome/free-solid-svg-icons";
-import "./TechStack.css";
+import "./TechStack.scss";
 
 export default function TechStack({ tech }) {
   const icons = {

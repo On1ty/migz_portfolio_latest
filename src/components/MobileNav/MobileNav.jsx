@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
-import "./MobileNav.css";
+import "./MobileNav.scss";
 
 export default function MobileNav() {
   function burgerMenuClick() {

@@ -1,4 +1,4 @@
-import "./RequestCVBtn.css";
+import "./RequestCVBtn.scss";
 
 export default function RequestCVBtn() {
   return (

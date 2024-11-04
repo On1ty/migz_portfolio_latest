@@ -1,5 +1,5 @@
 import HeroSection from "../HeroSection/HeroSection";
-import "./Main.css";
+import "./Main.scss";
 import data from "../../data.json";
 import TechSection from "../TechSection/TechSection";
 import EducationSection from "../EducationSection/EducationSection";

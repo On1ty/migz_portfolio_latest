@@ -140,33 +140,28 @@ button,
   user-select: none;
   text-align: center;
   border: 0.1em solid var(--dark-gray);
-}
 
-button:disabled,
-.button:disabled {
-  pointer-events: none;
-  opacity: 0.65;
-  color: var(--btn-hover-clr);
-}
+  &:disabled {
+    pointer-events: none;
+    opacity: 0.65;
+    color: var(--btn-hover-clr);
+  }
 
-button:hover,
-.button:hover {
-  color: var(--btn-hover-clr);
-}
+  &:hover {
+    color: var(--btn-hover-clr);
+  }
 
-button.large,
-.button.large {
-  font-size: 1.4rem;
-}
+  &.large {
+    font-size: 1.4rem;
+  }
 
-button.normal,
-.button.normal {
-  font-size: 1rem;
-}
+  &.normal {
+    font-size: 1rem;
+  }
 
-button.small,
-.button.small {
-  font-size: 0.9rem;
+  &.small {
+    font-size: 0.9rem;
+  }
 }
 
 #root {
@@ -182,15 +177,17 @@ button.small,
   color: var(--primary-clr);
 }
 
-section > .sub-header {
-  text-align: center;
-  font-weight: var(--font-bold);
-}
+section {
+  > .sub-header {
+    text-align: center;
+    font-weight: var(--font-bold);
+  }
 
-section > .summary {
-  text-align: center;
-  max-width: min(100%, 50ch);
-  margin: 1.563rem auto 3.125rem;
+  > .summary {
+    text-align: center;
+    max-width: min(100%, 50ch);
+    margin: 1.563rem auto 3.125rem;
+  }
 }
 
 label {
@@ -211,13 +208,12 @@ textarea {
   appearance: none;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   border-radius: 0.375em;
-}
 
-input:focus,
-textarea:focus {
-  box-shadow: 0 0 0 0.25rem rgba(255, 180, 0, 0.25);
-  border-color: var(--primary-clr);
-  outline: 0;
+  &:focus {
+    box-shadow: 0 0 0 0.25rem rgba(255, 180, 0, 0.25);
+    border-color: var(--primary-clr);
+    outline: 0;
+  }
 }
 
 /* swal2 custom css*/
@@ -256,7 +252,7 @@ div:where(.swal2-container) button:where(.swal2-styled):where(.swal2-confirm) {
     grid-area: unset;
     position: fixed;
     left: -20rem;
-    transition: left 0.2s ease, box-shadow .1s ease;
+    transition: left 0.2s ease, box-shadow 0.1s ease;
     z-index: 1001;
   }
 
@@ -278,22 +274,22 @@ div:where(.swal2-container) button:where(.swal2-styled):where(.swal2-confirm) {
   .hero {
     grid-template-columns: 1fr;
     padding: 3rem 0.8rem 0.8rem;
-  }
 
-  .hero-header {
-    text-align: center;
-  }
+    .hero-left {
+      align-items: center;
 
-  .hero-left {
-    align-items: center;
-  }
+      .hero-header {
+        text-align: center;
+      }
 
-  .hero-right {
-    display: none;
-  }
+      .hero-intro {
+        margin: 0 auto;
+      }
+    }
 
-  .hero-intro {
-    margin: 0 auto;
+    .hero-right {
+      display: none;
+    }
   }
 
   .education .education-item {
@@ -301,12 +297,14 @@ div:where(.swal2-container) button:where(.swal2-styled):where(.swal2-confirm) {
     max-width: calc(100% - 3rem);
   }
 
-  .work-history .work {
-    max-width: calc(100% - 3rem);
-  }
+  .work-history {
+    .work {
+      max-width: calc(100% - 3rem);
 
-  .work .job-info {
-    flex-direction: column;
+      .job-info {
+        flex-direction: column;
+      }
+    }
   }
 
   .tech-stack {
@@ -315,22 +313,24 @@ div:where(.swal2-container) button:where(.swal2-styled):where(.swal2-confirm) {
 
   .contact {
     grid-template-columns: 1fr;
-  }
 
-  .contact .info > div > div * {
-    font-size: 0.813rem !important;
-  }
+    > div {
+      &:nth-of-type(1) {
+        order: 2;
+      }
 
-  .contact > div:nth-of-type(1) {
-    order: 2;
-  }
+      &:nth-of-type(2) {
+        order: 1;
+      }
+    }
 
-  .contact > div:nth-of-type(2) {
-    order: 1;
-  }
+    .info > div > div * {
+      font-size: 0.813rem !important;
+    }
 
-  .contact .sub-header {
-    text-align: center;
+    .sub-header {
+      text-align: center;
+    }
   }
 
   section:not(:first-of-type) {
@@ -354,9 +354,9 @@ div:where(.swal2-container) button:where(.swal2-styled):where(.swal2-confirm) {
 
   .tech-stack {
     grid-template-columns: repeat(2, 1fr);
-  }
 
-  .tech-item {
-    padding: 0.9rem;
+    .tech-item {
+      padding: 0.9rem !important;
+    }
   }
 }

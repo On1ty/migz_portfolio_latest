@@ -1,5 +1,5 @@
 import { forwardRef } from "react";
-import "./EducationSection.css";
+import "./EducationSection.scss";
 
 export default forwardRef(function EducationSection({ anchorId, data }, ref) {
   const { summary, education } = data;

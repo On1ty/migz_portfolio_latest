@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import "./SocialMedia.css";
+import "./SocialMedia.scss";
 import {
   faFacebookF,
   faInstagram,

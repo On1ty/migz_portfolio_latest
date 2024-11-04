@@ -1,0 +1,62 @@
+.work-history {
+  background-color: var(--light);
+  border-radius: 0.3em;
+
+  .work {
+    padding-block: 3rem;
+    width: 100%;
+    max-width: calc(100% - 5rem);
+    margin-inline: auto;
+
+    > p + p {
+      margin-top: 0.3rem;
+    }
+
+    &:not(:last-child) {
+      border-bottom: 0.15rem solid var(--light-gray);
+    }
+
+    .job-title {
+      color: var(--dark-gray);
+      font-size: 1.125rem;
+      font-weight: var(--font-medium);
+    }
+
+    .company {
+      font-size: 1rem;
+      color: var(--dark-gray);
+    }
+
+    .job-info {
+      display: flex;
+      justify-content: space-between;
+      gap: 0.5rem;
+      font-size: 0.875rem;
+      font-style: italic;
+
+      > span {
+        background-color: var(--primary-clr);
+        color: var(--light);
+        padding: 0.1rem 0.3rem;
+        width: fit-content;
+      }
+    }
+
+    .responsibilities {
+      p {
+        margin-top: 1rem;
+        font-size: 0.938rem;
+      }
+
+      ul {
+        list-style: square;
+        padding-left: 1.5rem;
+
+        > li {
+          margin-block: 0.3rem;
+          font-size: 0.938rem;
+        }
+      }
+    }
+  }
+}

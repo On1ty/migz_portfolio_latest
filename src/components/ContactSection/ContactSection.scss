@@ -1,0 +1,76 @@
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr;
+  gap: 2rem;
+
+  > div {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .message-me,
+  .info {
+    background-color: var(--light);
+    padding: 1.3rem 1.3rem;
+    border-radius: 0.3em;
+  }
+
+  .sub-header {
+    font-weight: var(--font-bold);
+  }
+
+  .info {
+    > div {
+      text-align: center;
+
+      > div {
+        display: flex;
+        gap: 0.5rem;
+        justify-content: space-between;
+        margin-block: 0.7rem;
+        align-items: center;
+
+        * {
+          &:first-child {
+            font-size: 1.063rem;
+            font-weight: var(--font-medium);
+            /* color: var(--primary-clr); */
+          }
+
+          &:last-child {
+            font-size: 0.938rem;
+            color: var(--dark-gray);
+          }
+        }
+      }
+    }
+
+    a {
+      color: var(--dark-gray);
+      text-decoration: none;
+      font-weight: var(--font-semi-bold);
+      display: flex;
+      align-items: center;
+      gap: 0.2rem;
+    }
+  }
+
+  .icon {
+    height: 1.8rem;
+    aspect-ratio: 1;
+    background-color: var(--primary-clr);
+    color: var(--dark-gray);
+    border-radius: 50%;
+    padding: 0.8rem;
+    margin-block: 1.2rem;
+  }
+
+  .message-me form > div {
+    margin-bottom: 1rem;
+  }
+
+  textarea {
+    height: 18.75rem;
+  }
+}

@@ -1,5 +1,5 @@
 import { forwardRef } from "react";
-import "./WorkHistorySection.css";
+import "./WorkHistorySection.scss";
 
 export default forwardRef(function WorkHistorySection({ anchorId, data }, ref) {
   const { summary, work } = data;

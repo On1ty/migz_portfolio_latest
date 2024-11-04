@@ -2,7 +2,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import heroPhoto from "../../assets/company-photoshoot.png";
 import placeholderHeroPhoto from "../../assets/placeholder-company-photoshoot.jpg";
 import HireMeBtn from "../HireMeBtn/HireMeBtn";
-import "./HeroSection.css";
+import "./HeroSection.scss";
 import { forwardRef } from "react";
 
 export default forwardRef(function HereSection({ anchorId, data }, ref) {
