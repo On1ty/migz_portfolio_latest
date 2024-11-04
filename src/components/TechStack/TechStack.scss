@@ -1,0 +1,29 @@
+.tech-stack {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+
+  .tech-item {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.75rem;
+    gap: 1rem;
+    text-align: center;
+    border-radius: 0.3em;
+    justify-content: space-between;
+
+    .tech-icon {
+      color: var(--primary-clr);
+      font-size: 3rem;
+    }
+
+    .tech-name {
+      font-size: clamp(1rem, 0.975rem + 0.125vw, 1.125rem);
+      color: var(--dark-gray);
+    }
+
+    /* .tech-exp {} */
+  }
+}
