@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./App.css";
+import "./App.scss";
 import LeftSideNav from "./components/LeftSideNav/LeftSideNav";
 import Main from "./components/Main/Main";
 import MobileMenu from "./components/MobileMenu/MobileMenu";
