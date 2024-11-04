@@ -1,0 +1,47 @@
+.right-sidenav {
+  grid-area: right-nav;
+  background-color: var(--right-nav-bg);
+  position: sticky;
+  top: 0;
+  overflow-y: auto;
+
+  .wrapper {
+    height: 100vh;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  list-style-type: none;
+  align-items: center;
+
+  > li > a {
+    text-decoration: none;
+    color: var(--medium-gray);
+    transition: color 0.3s ease;
+
+    &:hover,
+    &.active {
+      color: var(--dark-gray);
+
+      > svg {
+        background-color: var(--primary-clr);
+      }
+    }
+
+    > svg {
+      height: 1.5rem;
+      aspect-ratio: 1;
+      background-color: var(--light-gray);
+      border-radius: 50%;
+      padding: 1rem;
+      transition: background-color 0.3s ease;
+    }
+  }
+}

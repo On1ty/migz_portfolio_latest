@@ -8,7 +8,7 @@ import {
   faUserGraduate,
   faUserSecret,
 } from "@fortawesome/free-solid-svg-icons";
-import "./RightSideNav.css";
+import "./RightSideNav.scss";
 
 export default function RightSideNav({ activeSection }) {
   const navItems = [
