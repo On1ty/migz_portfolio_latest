@@ -12,14 +12,16 @@
   width: 100%;
   max-width: calc(100% - 5rem);
   margin-inline: auto;
-}
 
-.education-item:not(:last-child) {
-  border-bottom: 0.15rem solid var(--light-gray);
-}
+  &:not(:last-child) {
+    border-bottom: 0.15rem solid var(--light-gray);
+  }
 
-.education-item > div > *:not(:last-child) {
-  margin-bottom: 1rem;
+  > div {
+    > *:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+  }
 }
 
 .institution,
