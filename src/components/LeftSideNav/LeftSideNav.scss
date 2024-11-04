@@ -1,0 +1,141 @@
+.left-sidenav {
+  grid-area: left-nav;
+  background-color: var(--left-nav-bg);
+  position: sticky;
+  top: 0;
+  overflow-y: auto;
+
+  .close-left-sidenav {
+    display: none;
+  }
+
+  &.active {
+    left: 0;
+    box-shadow: 300px 0px 200px 100vh rgba(17, 12, 46, 0.25);
+
+    .close-left-sidenav {
+      position: absolute;
+      right: -1.25rem;
+      top: 0.313rem;
+      font-size: 1.5rem;
+      color: var(--primary-clr);
+      display: block;
+    }
+  }
+
+  .wrapper {
+    max-width: calc(100% - 3.5rem);
+    margin-inline: auto;
+    height: 100vh;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    > div {
+      padding-block: 1rem;
+
+      &:not(:last-child) {
+        border-bottom: 0.15rem solid var(--light-gray);
+      }
+
+      &:last-child {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+      }
+    }
+  }
+
+  .info {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    row-gap: 1rem;
+    /* font-size: 0.938rem; */
+    align-items: flex-start;
+
+    span {
+      color: var(--dark-gray);
+    }
+
+    > span:nth-child(even) {
+      text-align: right;
+    }
+
+    > * {
+      &:nth-child(odd) > span {
+        /* position: relative; */
+        background-color: var(--primary-clr);
+        padding: 0.2rem 0.3rem;
+      }
+
+      &:nth-child(odd) > span::after {
+        content: ":";
+      }
+    }
+
+    > .freelance {
+      color: var(--success-clr);
+    }
+
+    > .freelance--error {
+      color: var(--error-clr);
+    }
+  }
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile__avatar {
+  max-width: 100%;
+  display: block;
+  width: 10rem;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid var(--dark-gray);
+  aspect-ratio: 1;
+}
+
+.profile__name {
+  font-weight: var(--font-medium);
+  color: var(--dark-gray);
+  font-size: 1.125rem;
+}
+
+.profile_job {
+  font-size: 0.938rem;
+}
+
+.profile > * + * {
+  margin-top: 0.6rem;
+}
+
+.extra-skills {
+  p {
+    font-weight: var(--font-medium);
+    font-size: 1.125rem;
+    color: var(--dark-gray);
+  }
+
+  ul {
+    list-style: none;
+    margin-top: 0.938rem;
+
+    li {
+      display: grid;
+      grid-template-columns: 2rem 1fr;
+      gap: 0.5rem;
+      align-items: center;
+      margin-block: 0.5rem;
+
+      > svg {
+        color: var(--primary-clr);
+      }
+    }
+  }
+}

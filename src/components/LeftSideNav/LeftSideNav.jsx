@@ -1,4 +1,4 @@
-import "./LeftSideNav.css";
+import "./LeftSideNav.scss";
 import avatarPhoto from "../../assets/avatar.jpeg";
 import data from "../../data.json";
 import SocialMedia from "../SocialMedia/SocialMedia";
