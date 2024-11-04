@@ -14,6 +14,7 @@ This portfolio is built with modern web technologies, demonstrating my proficien
 - **Font Awesome**: Providing a rich set of icons to enhance the visual appeal
 - **Moment.js**: Handling date and time operations with ease
 - **Vite**: Leveraging next-generation frontend tooling for optimal performance
+- **EmailJS**: For email sending
 
 ## 🌟 Features
 
