@@ -1,4 +1,4 @@
-import "./MobileMenu.css";
+import "./MobileMenu.scss";
 
 export default function MobileMenu({ activeSection }) {
   function linkClick(e) {
